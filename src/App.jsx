@@ -53,17 +53,20 @@ function App() {
 
           <div
             style={{
-              width: "180px",
-              height: "180px",
+              width: "200px",
+              height: "200px",
               borderRadius: "50%",
-              border: "4px solid #3B82F6",
+              border: "5px solid #60A5FA",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              fontSize: "60px",
+              fontSize: "70px",
               fontWeight: "bold",
               color: "#60A5FA",
               marginBottom: "30px",
+              boxShadow: "0 0 40px rgba(96,165,250,0.5)",
+              background:
+                "linear-gradient(145deg,#111827,#0B1120)",
             }}
           >
             AK
@@ -251,15 +254,25 @@ function App() {
       <section style={sectionStyle}>
         <h2 style={headingStyle}>Education</h2>
 
-        <div style={cardStyle}>
-          <h3>B.Tech - Computer Science & Engineering</h3>
+        <div
+          style={{
+            ...cardStyle,
+            maxWidth: "900px",
+            margin: "auto",
+          }}
+        >
+          <h3 style={{ color: "#60A5FA" }}>
+            🎓 B.Tech - Computer Science & Engineering
+          </h3>
 
           <p>CV Raman Global University, Bhubaneswar</p>
 
           <p>2024 - 2028</p>
 
           <p>
-            CGPA: <strong>8.00</strong>
+            CGPA: <strong style={{ color: "#60A5FA" }}>
+              8.00
+            </strong>
           </p>
         </div>
       </section>
@@ -405,7 +418,7 @@ function App() {
           }}
         >
           <div style={cardStyle}>
-            <h3>GitHub</h3>
+            <h3>🐙 GitHub</h3>
             <p>Open Source Contributions & Projects</p>
 
             <a
@@ -414,12 +427,12 @@ function App() {
               rel="noreferrer"
               style={{ color: "#60A5FA" }}
             >
-              View Profile →
+              View Profile
             </a>
           </div>
 
           <div style={cardStyle}>
-            <h3>LeetCode</h3>
+            <h3>💻 LeetCode</h3>
             <p>DSA & Problem Solving</p>
 
             <a
@@ -428,12 +441,12 @@ function App() {
               rel="noreferrer"
               style={{ color: "#60A5FA" }}
             >
-              View Profile →
+              View Profile
             </a>
           </div>
 
           <div style={cardStyle}>
-            <h3>CodeChef</h3>
+            <h3>🍽️ CodeChef</h3>
             <p>Competitive Programming</p>
 
             <a
@@ -442,7 +455,7 @@ function App() {
               rel="noreferrer"
               style={{ color: "#60A5FA" }}
             >
-              View Profile →
+              View Profile
             </a>
           </div>
         </div>
@@ -579,17 +592,17 @@ const sectionStyle = {
 
 const cardStyle = {
   backgroundColor: "#111827",
-  padding: "25px",
-  margin: "20px 0",
-  borderRadius: "15px",
-  border: "1px solid #1E3A8A",
-  boxShadow: "0px 0px 15px rgba(37,99,235,0.15)",
-  minWidth: "250px",
-  flex: "1",
+  padding: "30px",
+  borderRadius: "20px",
+  border: "1px solid #2563EB",
+  boxShadow: "0 0 25px rgba(37,99,235,0.15)",
+  transition: "0.3s",
 };
 
 const headingStyle = {
-  fontSize: "40px",
+  fontSize: "48px",
+  fontWeight: "700",
+  letterSpacing: "1px",
   color: "#60A5FA",
   marginBottom: "20px",
 };
