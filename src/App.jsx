@@ -32,128 +32,174 @@ function App() {
       {/* Hero Section */}
       <section
         style={{
-          textAlign: "center",
-          padding: "100px 20px",
-        }}
-      >
-      <div
-        style={{
-          width: "180px",
-          height: "180px",
-          borderRadius: "50%",
-          backgroundColor: "#111827",
-          border: "4px solid #2563EB",
-          margin: "0 auto 30px",
           display: "flex",
+          justifyContent: "space-between",
           alignItems: "center",
-          justifyContent: "center",
-          fontSize: "60px",
-          fontWeight: "bold",
+          flexWrap: "wrap",
+          padding: "80px 60px",
+          gap: "40px",
         }}
       >
-        AK
-      </div>
+        {/* Left Side */}
+        <div style={{ flex: "1", minWidth: "350px" }}>
 
-        <h1
-          style={{
-            fontSize: "70px",
-            marginBottom: "10px",
-            background: "linear-gradient(90deg, #60A5FA, #93C5FD)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-          }}
-        >
-          Akhilesh Kumar
-        </h1>
-
-        <h2
-          style={{
-            color: "#60A5FA",
-            fontSize: "28px",
-            marginBottom: "20px",
-          }}
-        >
-          Java Developer | Open Source Contributor | DSA Learner
-        </h2>
-
-        <p style={{ maxWidth: "800px", margin: "20px auto" }}>
-          Computer Science & Engineering student at CV Raman Global University,
-          specializing in Java Development, Data Structures & Algorithms,
-          Open Source Contributions, Machine Learning and Modern Web Development.
-          Focused on building scalable software solutions and continuously
-          improving problem-solving skills.
-        </p>
-
-        <div>
-          <a
-            href="https://github.com/AKHILESH-create"
-            target="_blank"
-            rel="noreferrer"
-            style={buttonStyle}
-          >
-            GitHub
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/akhilesh-kumar-29678a310"
-            target="_blank"
-            rel="noreferrer"
-            style={buttonStyle}
-          >
-            LinkedIn
-          </a>
-
-          <a
-            href="https://leetcode.com/u/Akhilesh_kr11/"
-            target="_blank"
-            rel="noreferrer"
-            style={buttonStyle}
-          >
-            LeetCode
-          </a>
-
-          <a
-            href="/resume.pdf"
-            target="_blank"
-            rel="noreferrer"
+          <div
             style={{
-              ...buttonStyle,
-              backgroundColor: "#16A34A",
+              width: "180px",
+              height: "180px",
+              borderRadius: "50%",
+              border: "4px solid #3B82F6",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: "60px",
+              fontWeight: "bold",
+              color: "#60A5FA",
+              marginBottom: "30px",
             }}
           >
-            Resume
-          </a>
+            AK
+          </div>
 
+          <h1
+            style={{
+              fontSize: "90px",
+              lineHeight: "90px",
+              margin: 0,
+              fontFamily: "cursive",
+              color: "#60A5FA",
+            }}
+          >
+            Akhilesh
+          </h1>
+
+          <h1
+            style={{
+              fontSize: "70px",
+              marginTop: "0px",
+              fontFamily: "cursive",
+            }}
+          >
+            Kumar
+          </h1>
+
+          <h2
+            style={{
+              color: "#60A5FA",
+              marginTop: "25px",
+            }}
+          >
+            Java Developer | Open Source Contributor | DSA Learner
+          </h2>
+
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "15px",
+              marginTop: "30px",
+            }}
+          >
+            <a
+              href="https://github.com/AKHILESH-create"
+              target="_blank"
+              rel="noreferrer"
+              style={buttonStyle}
+            >
+              GitHub
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/akhilesh-kumar-29678a310"
+              target="_blank"
+              rel="noreferrer"
+              style={buttonStyle}
+            >
+              LinkedIn
+            </a>
+
+            <a
+              href="https://leetcode.com/u/Akhilesh_kr11/"
+              target="_blank"
+              rel="noreferrer"
+              style={buttonStyle}
+            >
+              LeetCode
+            </a>
+
+            <a
+              href="https://www.codechef.com/users/akhileshkr_11"
+              target="_blank"
+              rel="noreferrer"
+              style={buttonStyle}
+            >
+              CodeChef
+            </a>
+
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                ...buttonStyle,
+                backgroundColor: "#16A34A",
+              }}
+            >
+              Resume
+            </a>
+          </div>
         </div>
-      </section>
 
-      <section
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          flexWrap: "wrap",
-          gap: "20px",
-          padding: "20px",
-        }}
-      >
-        <div style={cardStyle}>
-          <h2 style={{ color: "#60A5FA" }}>3+</h2>
-          <p>Projects</p>
-        </div>
+        {/* Right Side Description Box */}
+        <div
+          style={{
+            flex: "1",
+            minWidth: "350px",
+            backgroundColor: "#111827",
+            border: "1px solid #2563EB",
+            borderRadius: "20px",
+            padding: "40px",
+            boxShadow: "0px 0px 20px rgba(37,99,235,0.2)",
+          }}
+        >
+          <h2
+            style={{
+              color: "#60A5FA",
+              fontSize: "50px",
+              marginTop: "0",
+            }}
+          >
+            ❝
+          </h2>
 
-        <div style={cardStyle}>
-          <h2 style={{ color: "#60A5FA" }}>8.00</h2>
-          <p>CGPA</p>
-        </div>
+          <p
+            style={{
+              fontSize: "22px",
+              lineHeight: "1.8",
+            }}
+          >
+            Computer Science & Engineering student at CV Raman Global
+            University passionate about Java Development,
+            Data Structures & Algorithms, Open Source Contributions,
+            Machine Learning and Modern Web Development.
+          </p>
 
-        <div style={cardStyle}>
-          <h2 style={{ color: "#60A5FA" }}>2026</h2>
-          <p>GSSoC Contributor</p>
-        </div>
+          <hr
+            style={{
+              borderColor: "#1E3A8A",
+              margin: "30px 0",
+            }}
+          />
 
-        <div style={cardStyle}>
-          <h2 style={{ color: "#60A5FA" }}>100+</h2>
-          <p>DSA Problems</p>
+          <p
+            style={{
+              color: "#93C5FD",
+              fontSize: "18px",
+            }}
+          >
+            🎯 Focused on building scalable software solutions and
+            continuously improving problem-solving skills.
+          </p>
         </div>
       </section>
 
@@ -398,13 +444,13 @@ const linkStyle = {
 };
 
 const buttonStyle = {
-  backgroundColor: "#2563EB",
+  backgroundColor: "#111827",
   color: "white",
-  padding: "12px 20px",
-  margin: "10px",
-  borderRadius: "8px",
+  padding: "12px 22px",
+  borderRadius: "10px",
   textDecoration: "none",
-  display: "inline-block",
+  border: "1px solid #2563EB",
+  transition: "0.3s",
 };
 
 const sectionStyle = {
