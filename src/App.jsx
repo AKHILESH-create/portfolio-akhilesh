@@ -26,6 +26,7 @@ function App() {
       <nav
         style={{
           display: "flex",
+          alignItems: "center",
           justifyContent: "space-between",
           padding: "20px 50px",
           backgroundColor: "#111827",
@@ -36,12 +37,12 @@ function App() {
         <h2
           style={{
             color: "#60A5FA",
-            fontSize: "38px",
+            fontSize: "24px",   // reduced from 38px
             margin: 0,
             fontFamily: "cursive",
             fontWeight: "bold",
             letterSpacing: "1px",
-            textShadow: "0 0 15px rgba(96,165,250,0.5)",
+            textShadow: "0 0 10px rgba(96,165,250,0.4)",
           }}
         >
           Akhilesh
@@ -125,12 +126,12 @@ function App() {
             src="/profile.jpeg"
             alt="Akhilesh Kumar"
             style={{
-              width: "220px",
-              height: "220px",
+              width: "250px",
+              height: "250px",
               borderRadius: "50%",
               objectFit: "cover",
               border: "5px solid #60A5FA",
-              boxShadow: "0 0 25px rgba(96,165,250,0.5)",
+              boxShadow: "0 0 30px rgba(96,165,250,0.5)",
               marginBottom: "30px",
             }}
           />
@@ -231,12 +232,15 @@ function App() {
         {/* Right Side Description Box */}
         <div
           style={{
-            flex: "1",
-            minWidth: "350px",
+            flex: "0.85",
+            maxWidth: "520px",
+            minWidth: "320px",
             backgroundColor: "#111827",
             border: "1px solid #2563EB",
             borderRadius: "20px",
-            padding: "40px",
+            padding: "50px 40px",
+            marginTop: "-25px",   // moves box upward
+            minHeight: "380px",   // slightly taller
             boxShadow: "0px 0px 20px rgba(37,99,235,0.2)",
           }}
         >
