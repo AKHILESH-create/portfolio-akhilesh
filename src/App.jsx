@@ -22,18 +22,74 @@ function App() {
         <h2
           style={{
             color: "#60A5FA",
-            fontWeight: "bold",
-            letterSpacing: "2px",
+            fontSize: "28px",
+            fontWeight: "700",
+            letterSpacing: "4px",
+            fontFamily: "'Trebuchet MS', sans-serif",
+            textTransform: "uppercase",
+            textShadow: "0 0 15px rgba(96,165,250,0.5)",
           }}
         >
           AKHILESH
         </h2>
-
         <div>
-          <a href="#about" style={linkStyle}>About</a>
-          <a href="#skills" style={linkStyle}>Skills</a>
-          <a href="#projects" style={linkStyle}>Projects</a>
-          <a href="#contact" style={linkStyle}>Contact</a>
+
+          <a
+            href="#about"
+            style={{
+              background: "#1E293B",
+              padding: "10px 18px",
+              borderRadius: "10px",
+              border: "1px solid #2563EB",
+              color: "white",
+              textDecoration: "none",
+              marginLeft: "10px",
+            }}
+          >
+            About
+          </a>
+          <a
+            href="#skills"
+            style={{
+              background: "#1E293B",
+              padding: "10px 18px",
+              borderRadius: "10px",
+              border: "1px solid #2563EB",
+              color: "white",
+              textDecoration: "none",
+              marginLeft: "10px",
+            }}
+          >
+            Skills
+          </a>
+          <a
+            href="#projects"
+            style={{
+              background: "#1E293B",
+              padding: "10px 18px",
+              borderRadius: "10px",
+              border: "1px solid #2563EB",
+              color: "white",
+              textDecoration: "none",
+              marginLeft: "10px",
+            }}
+          >
+            Projects
+          </a>
+          <a
+            href="contact"
+            style={{
+              background: "#1E293B",
+              padding: "10px 18px",
+              borderRadius: "10px",
+              border: "1px solid #2563EB",
+              color: "white",
+              textDecoration: "none",
+              marginLeft: "10px",
+            }}
+          >
+            Contact
+          </a>
         </div>
       </nav>
 
@@ -51,26 +107,19 @@ function App() {
         {/* Left Side */}
         <div style={{ flex: "1", minWidth: "350px" }}>
 
-          <div
+          <img
+            src="/profile.jpeg"
+            alt="Akhilesh Kumar"
             style={{
-              width: "200px",
-              height: "200px",
+              width: "220px",
+              height: "220px",
               borderRadius: "50%",
+              objectFit: "cover",
               border: "5px solid #60A5FA",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: "70px",
-              fontWeight: "bold",
-              color: "#60A5FA",
+              boxShadow: "0 0 25px rgba(96,165,250,0.5)",
               marginBottom: "30px",
-              boxShadow: "0 0 40px rgba(96,165,250,0.5)",
-              background:
-                "linear-gradient(145deg,#111827,#0B1120)",
             }}
-          >
-            AK
-          </div>
+          />
 
           <h1
             style={{
@@ -100,7 +149,7 @@ function App() {
               marginTop: "25px",
             }}
           >
-            Java Developer | Open Source Contributor | DSA Learner
+            Java Developer | Web Developer | Open Source Contributor | DSA Learner
           </h2>
 
           <div
@@ -176,8 +225,9 @@ function App() {
           <h2
             style={{
               color: "#60A5FA",
-              fontSize: "50px",
-              marginTop: "0",
+              fontSize: "40px",
+              margin: "0 0 10px 0",
+              lineHeight: "1",
             }}
           >
             ❝
@@ -187,12 +237,13 @@ function App() {
             style={{
               fontSize: "22px",
               lineHeight: "1.8",
+              marginTop: "0",
             }}
           >
             Computer Science & Engineering student at CV Raman Global
-            University passionate about Java Development,
+            University passionate about Java Development, Web Development,
             Data Structures & Algorithms, Open Source Contributions,
-            Machine Learning and Modern Web Development.
+            Machine Learning, UI/UX Design and Modern Software Development.
           </p>
 
           <hr
@@ -231,25 +282,34 @@ function App() {
           }}
         >
           <p>
-            I am a B.Tech Computer Science & Engineering student at
-            CV Raman Global University, Bhubaneswar.
+            I am a Computer Science and Engineering undergraduate at
+            CV Raman Global University, Bhubaneswar, with a strong
+            interest in software development, problem solving and
+            modern web technologies.
           </p>
 
           <p>
-            My primary interests are Java Development, Data Structures &
-            Algorithms, Open Source Contributions and Web Development.
+            My primary focus areas include Java Development,
+            Full Stack Web Development, Data Structures &
+            Algorithms, Open Source Contributions and Machine Learning.
           </p>
 
           <p>
-            I enjoy building software projects, solving coding problems
-            and continuously learning new technologies.
+            I enjoy transforming ideas into practical applications,
+            building scalable projects and continuously expanding
+            my technical expertise through hands-on development
+            and collaborative learning experiences.
           </p>
 
           <p>
-            Current CGPA: <strong>8.00</strong>
+            Alongside academics, I actively participate in coding,
+            open-source programs and technical communities to
+            strengthen both my development and teamwork skills.
           </p>
+
         </div>
       </section>
+
 
       <section style={sectionStyle}>
         <h2 style={headingStyle}>Education</h2>
@@ -303,14 +363,21 @@ function App() {
             <p>React</p>
             <p>Vite</p>
             <p>Java Swing</p>
+            <p>Pandas</p>
+            <p>NumPy</p>
+            <p>Streamlit</p>
+            <p>REST APIs</p>
             <p>Scikit-Learn</p>
+            <p>UI/UX Design</p>
           </div>
 
           <div style={cardStyle}>
             <h3>Tools</h3>
+            <p>VS Code</p>
             <p>Git</p>
             <p>GitHub</p>
-            <p>VS Code</p>
+            <p>Jupyter Notebook</p>
+            <p>MySQL</p>
             <p>IntelliJ IDEA</p>
             <p>Vercel</p>
           </div>
@@ -411,13 +478,20 @@ function App() {
 
         <div
           style={{
-            display: "flex",
-            flexWrap: "wrap",
-            gap: "20px",
-            justifyContent: "center",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))",
+            gap: "25px",
           }}
         >
-          <div style={cardStyle}>
+          <div
+            style={{
+              ...cardStyle,
+              height: "220px",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+            }}
+          >
             <h3>🐙 GitHub</h3>
             <p>Open Source Contributions & Projects</p>
 
@@ -431,7 +505,15 @@ function App() {
             </a>
           </div>
 
-          <div style={cardStyle}>
+          <div
+            style={{
+              ...cardStyle,
+              height: "220px",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+            }}
+          >
             <h3>💻 LeetCode</h3>
             <p>DSA & Problem Solving</p>
 
@@ -445,7 +527,15 @@ function App() {
             </a>
           </div>
 
-          <div style={cardStyle}>
+          <div
+            style={{
+              ...cardStyle,
+              height: "220px",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+            }}
+          >
             <h3>🍽️ CodeChef</h3>
             <p>Competitive Programming</p>
 
@@ -460,7 +550,6 @@ function App() {
           </div>
         </div>
       </section>
-
 
       {/* Achievements */}
       <section style={sectionStyle}>
@@ -559,7 +648,7 @@ function App() {
         </h3>
 
         <p>
-          Java Developer • Open Source Contributor • DSA Learner
+          Java Developer • Web Developer • Open Source Contributor • DSA Learner
         </p>
 
         <p style={{ marginTop: "15px" }}>
