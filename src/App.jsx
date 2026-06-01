@@ -36,6 +36,24 @@ function App() {
           padding: "100px 20px",
         }}
       >
+      <div
+        style={{
+          width: "180px",
+          height: "180px",
+          borderRadius: "50%",
+          backgroundColor: "#111827",
+          border: "4px solid #2563EB",
+          margin: "0 auto 30px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          fontSize: "60px",
+          fontWeight: "bold",
+        }}
+      >
+        AK
+      </div>
+
         <h1
           style={{
             fontSize: "70px",
@@ -59,9 +77,11 @@ function App() {
         </h2>
 
         <p style={{ maxWidth: "800px", margin: "20px auto" }}>
-          Computer Science Engineering Student at CV Raman Global University,
-          passionate about Java Development, Data Structures & Algorithms,
-          Open Source Contributions, Machine Learning and Web Development.
+          Computer Science & Engineering student at CV Raman Global University,
+          specializing in Java Development, Data Structures & Algorithms,
+          Open Source Contributions, Machine Learning and Modern Web Development.
+          Focused on building scalable software solutions and continuously
+          improving problem-solving skills.
         </p>
 
         <div>
@@ -91,8 +111,52 @@ function App() {
           >
             LeetCode
           </a>
+
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              ...buttonStyle,
+              backgroundColor: "#16A34A",
+            }}
+          >
+            Resume
+          </a>
+
         </div>
       </section>
+
+      <section
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          flexWrap: "wrap",
+          gap: "20px",
+          padding: "20px",
+        }}
+      >
+        <div style={cardStyle}>
+          <h2 style={{ color: "#60A5FA" }}>3+</h2>
+          <p>Projects</p>
+        </div>
+
+        <div style={cardStyle}>
+          <h2 style={{ color: "#60A5FA" }}>8.00</h2>
+          <p>CGPA</p>
+        </div>
+
+        <div style={cardStyle}>
+          <h2 style={{ color: "#60A5FA" }}>2026</h2>
+          <p>GSSoC Contributor</p>
+        </div>
+
+        <div style={cardStyle}>
+          <h2 style={{ color: "#60A5FA" }}>100+</h2>
+          <p>DSA Problems</p>
+        </div>
+      </section>
+
 
       {/* About */}
       <section id="about" style={sectionStyle}>
