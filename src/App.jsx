@@ -1,3 +1,11 @@
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaPhone,
+  FaCode,
+  FaGraduationCap
+} from "react-icons/fa";
 function App() {
   return (
     <div
@@ -77,7 +85,7 @@ function App() {
             Projects
           </a>
           <a
-            href="contact"
+            href="#contact"
             style={{
               background: "#1E293B",
               padding: "10px 18px",
@@ -210,6 +218,8 @@ function App() {
           </div>
         </div>
 
+
+
         {/* Right Side Description Box */}
         <div
           style={{
@@ -321,8 +331,16 @@ function App() {
             margin: "auto",
           }}
         >
-          <h3 style={{ color: "#60A5FA" }}>
-            🎓 B.Tech - Computer Science & Engineering
+          <h3
+            style={{
+              color: "#60A5FA",
+              display: "flex",
+              alignItems: "center",
+              gap: "10px",
+            }}
+          >
+            <FaGraduationCap />
+            B.Tech - Computer Science & Engineering
           </h3>
 
           <p>CV Raman Global University, Bhubaneswar</p>
@@ -345,11 +363,16 @@ function App() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))",
+            gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))",
             gap: "20px",
           }}
         >
-          <div style={cardStyle}>
+          <div
+            style={{
+              ...cardStyle,
+              minHeight: "180px",
+            }}
+          >
             <h3>Languages</h3>
             <p>C++</p>
             <p>Java</p>
@@ -358,7 +381,12 @@ function App() {
             <p>SQL</p>
           </div>
 
-          <div style={cardStyle}>
+          <div
+            style={{
+              ...cardStyle,
+              minHeight: "180px",
+            }}
+          >
             <h3>Frameworks</h3>
             <p>React</p>
             <p>Vite</p>
@@ -371,7 +399,12 @@ function App() {
             <p>UI/UX Design</p>
           </div>
 
-          <div style={cardStyle}>
+          <div
+            style={{
+              ...cardStyle,
+              minHeight: "180px",
+            }}
+          >
             <h3>Tools</h3>
             <p>VS Code</p>
             <p>Git</p>
@@ -409,7 +442,7 @@ function App() {
               rel="noreferrer"
               style={{ color: "#60A5FA" }}
             >
-              View Project →
+              View Project
             </a>
           </div>
 
@@ -427,7 +460,7 @@ function App() {
               rel="noreferrer"
               style={{ color: "#60A5FA" }}
             >
-              View Project →
+              View Project
             </a>
           </div>
 
@@ -445,7 +478,7 @@ function App() {
               rel="noreferrer"
               style={{ color: "#60A5FA" }}
             >
-              View Project →
+              View Project
             </a>
           </div>
 
@@ -486,13 +519,15 @@ function App() {
           <div
             style={{
               ...cardStyle,
-              height: "220px",
+              height: "180px",
               display: "flex",
               flexDirection: "column",
               justifyContent: "space-between",
             }}
           >
-            <h3>🐙 GitHub</h3>
+            <h3>
+              <FaGithub /> GitHub
+            </h3>
             <p>Open Source Contributions & Projects</p>
 
             <a
@@ -508,13 +543,15 @@ function App() {
           <div
             style={{
               ...cardStyle,
-              height: "220px",
+              height: "180px",
               display: "flex",
               flexDirection: "column",
               justifyContent: "space-between",
             }}
           >
-            <h3>💻 LeetCode</h3>
+            <h3>
+              <FaCode /> LeetCode
+            </h3>
             <p>DSA & Problem Solving</p>
 
             <a
@@ -530,13 +567,15 @@ function App() {
           <div
             style={{
               ...cardStyle,
-              height: "220px",
+              height: "180px",
               display: "flex",
               flexDirection: "column",
               justifyContent: "space-between",
             }}
           >
-            <h3>🍽️ CodeChef</h3>
+            <h3>
+              ☕ CodeChef
+            </h3>
             <p>Competitive Programming</p>
 
             <a
@@ -596,17 +635,23 @@ function App() {
           }}
         >
           <div style={cardStyle}>
-            <h3>📧 Email</h3>
+            <h3>
+              <FaEnvelope /> Email
+            </h3>
             <p>akhilesh.k19857@gmail.com</p>
           </div>
 
           <div style={cardStyle}>
-            <h3>📱 Phone</h3>
+            <h3>
+              <FaPhone /> Phone
+            </h3>
             <p>+91 9973282999</p>
           </div>
 
           <div style={cardStyle}>
-            <h3>💼 LinkedIn</h3>
+            <h3>
+              <FaLinkedin /> LinkedIn
+            </h3>
 
             <a
               href="https://www.linkedin.com/in/akhilesh-kumar-29678a310"
@@ -614,12 +659,14 @@ function App() {
               rel="noreferrer"
               style={{ color: "#60A5FA" }}
             >
-              Visit Profile →
+              Visit Profile
             </a>
           </div>
 
           <div style={cardStyle}>
-            <h3>💻 GitHub</h3>
+            <h3>
+              <FaGithub /> GitHub
+            </h3>
 
             <a
               href="https://github.com/AKHILESH-create"
@@ -627,7 +674,7 @@ function App() {
               rel="noreferrer"
               style={{ color: "#60A5FA" }}
             >
-              Visit Profile →
+              Visit Profile
             </a>
           </div>
         </div>
@@ -685,7 +732,8 @@ const cardStyle = {
   borderRadius: "20px",
   border: "1px solid #2563EB",
   boxShadow: "0 0 25px rgba(37,99,235,0.15)",
-  transition: "0.3s",
+  transition: "all 0.3s ease",
+  cursor: "pointer",
 };
 
 const headingStyle = {
