@@ -4,8 +4,14 @@ import {
   FaEnvelope,
   FaPhone,
   FaCode,
-  FaGraduationCap
+  FaGraduationCap,
+  FaTrophy,
+  FaJava,
+  FaRobot
 } from "react-icons/fa";
+
+import { SiLeetcode, SiCodechef } from "react-icons/si";
+
 function App() {
   return (
     <div
@@ -30,15 +36,15 @@ function App() {
         <h2
           style={{
             color: "#60A5FA",
-            fontSize: "28px",
-            fontWeight: "700",
-            letterSpacing: "4px",
-            fontFamily: "'Trebuchet MS', sans-serif",
-            textTransform: "uppercase",
+            fontSize: "38px",
+            margin: 0,
+            fontFamily: "cursive",
+            fontWeight: "bold",
+            letterSpacing: "1px",
             textShadow: "0 0 15px rgba(96,165,250,0.5)",
           }}
         >
-          AKHILESH
+          Akhilesh
         </h2>
         <div>
 
@@ -174,6 +180,7 @@ function App() {
               rel="noreferrer"
               style={buttonStyle}
             >
+              <FaGithub style={{ marginRight: "8px" }} />
               GitHub
             </a>
 
@@ -183,6 +190,7 @@ function App() {
               rel="noreferrer"
               style={buttonStyle}
             >
+              <FaLinkedin style={{ marginRight: "8px" }} />
               LinkedIn
             </a>
 
@@ -192,6 +200,7 @@ function App() {
               rel="noreferrer"
               style={buttonStyle}
             >
+              <SiLeetcode style={{ marginRight: "8px" }} />
               LeetCode
             </a>
 
@@ -201,6 +210,7 @@ function App() {
               rel="noreferrer"
               style={buttonStyle}
             >
+              <SiCodechef style={{ marginRight: "8px" }} />
               CodeChef
             </a>
 
@@ -213,12 +223,10 @@ function App() {
                 backgroundColor: "#16A34A",
               }}
             >
-              Resume
+              📄 Resume
             </a>
           </div>
         </div>
-
-
 
         {/* Right Side Description Box */}
         <div
@@ -525,9 +533,16 @@ function App() {
               justifyContent: "space-between",
             }}
           >
-            <h3>
-              <FaGithub /> GitHub
-            </h3>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+              }}
+            >
+              <FaGithub size={35} />
+              <h3 style={{ margin: 0 }}>GitHub</h3>
+            </div>
             <p>Open Source Contributions & Projects</p>
 
             <a
@@ -549,9 +564,16 @@ function App() {
               justifyContent: "space-between",
             }}
           >
-            <h3>
-              <FaCode /> LeetCode
-            </h3>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+              }}
+            >
+              <SiLeetcode size={35} />
+              <h3 style={{ margin: 0 }}>LeetCode</h3>
+            </div>
             <p>DSA & Problem Solving</p>
 
             <a
@@ -573,9 +595,16 @@ function App() {
               justifyContent: "space-between",
             }}
           >
-            <h3>
-              ☕ CodeChef
-            </h3>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+              }}
+            >
+              <SiCodechef size={35} />
+              <h3 style={{ margin: 0 }}>CodeChef</h3>
+            </div>
             <p>Competitive Programming</p>
 
             <a
@@ -602,22 +631,34 @@ function App() {
           }}
         >
           <div style={cardStyle}>
-            <h3>GSSoC 2026</h3>
+            <h3>
+              <FaTrophy style={{ marginRight: "10px" }} />
+              GSSoC 2026
+            </h3>
             <p>Selected Contributor</p>
           </div>
 
           <div style={cardStyle}>
-            <h3>Open Source</h3>
+            <h3>
+              <FaGithub style={{ marginRight: "10px" }} />
+              Open Source
+            </h3>
             <p>Active Contributor</p>
           </div>
 
           <div style={cardStyle}>
-            <h3>Java Development</h3>
+            <h3>
+              <FaJava style={{ marginRight: "10px" }} />
+              Java Development
+            </h3>
             <p>Built multiple GUI applications.</p>
           </div>
 
           <div style={cardStyle}>
-            <h3>Machine Learning</h3>
+            <h3>
+              <FaRobot style={{ marginRight: "10px" }} />
+              Machine Learning
+            </h3>
             <p>Developed ML prediction projects.</p>
           </div>
         </div>
@@ -719,6 +760,9 @@ const buttonStyle = {
   borderRadius: "10px",
   textDecoration: "none",
   border: "1px solid #2563EB",
+  display: "flex",
+  alignItems: "center",
+  gap: "8px",
   transition: "0.3s",
 };
 
