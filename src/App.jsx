@@ -248,6 +248,23 @@ function App() {
         </div>
       </section>
 
+      <section style={sectionStyle}>
+        <h2 style={headingStyle}>Education</h2>
+
+        <div style={cardStyle}>
+          <h3>B.Tech - Computer Science & Engineering</h3>
+
+          <p>CV Raman Global University, Bhubaneswar</p>
+
+          <p>2024 - 2028</p>
+
+          <p>
+            CGPA: <strong>8.00</strong>
+          </p>
+        </div>
+      </section>
+
+
       {/* Skills */}
       <section id="skills" style={sectionStyle}>
         <h2 style={headingStyle}>Skills</h2>
@@ -289,64 +306,81 @@ function App() {
 
       {/* Projects */}
       <section id="projects" style={sectionStyle}>
-        <h2
+        <h2 style={headingStyle}>Projects</h2>
+
+        <div
           style={{
-            fontSize: "40px",
-            color: "#60A5FA",
-            marginBottom: "20px",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit,minmax(320px,1fr))",
+            gap: "25px",
           }}
         >
-          Projects
-        </h2>
+          <div style={cardStyle}>
+            <h3>🐍 Snake Game using Java GUI</h3>
 
-        <div style={cardStyle}>
-          <h3>
+            <p>
+              Classic Snake Game developed using Java Swing with score tracking,
+              collision detection and responsive controls.
+            </p>
+
             <a
               href="https://github.com/AKHILESH-create/Snake-Game-using-Java-GUI"
               target="_blank"
               rel="noreferrer"
               style={{ color: "#60A5FA" }}
             >
-              Snake Game using Java GUI
+              View Project →
             </a>
-          </h3>
-          <p>Classic Snake Game built using Java Swing.</p>
-        </div>
+          </div>
 
-        <div style={cardStyle}>
-          <h3>
+          <div style={cardStyle}>
+            <h3>🧱 Brick Breaker Game</h3>
+
+            <p>
+              Multi-level Brick Breaker Game built with Java Swing featuring
+              paddle control, scoring system and multiple levels.
+            </p>
+
             <a
-              href="https://github.com/AKHILESH-create/Brick-Breaker-Game-using-Java-Swing.git"
+              href="https://github.com/AKHILESH-create/Brick-Breaker-Game-using-Java-Swing"
               target="_blank"
               rel="noreferrer"
               style={{ color: "#60A5FA" }}
             >
-              Brick Beaker Game using Java Swing
+              View Project →
             </a>
-          </h3>
-          <p>Multi-level brick breaker game using Java Swing.</p>
-        </div>
+          </div>
 
-        <div style={cardStyle}>
-          <h3>
+          <div style={cardStyle}>
+            <h3>🍷 Wine Quality Prediction</h3>
+
+            <p>
+              Machine Learning project that predicts wine quality using
+              classification algorithms and data analysis techniques.
+            </p>
+
             <a
-              href="https://github.com/Akhilesh-gitt/Wine_Quality_Prediction.git"
+              href="https://github.com/Akhilesh-gitt/Wine_Quality_Prediction"
               target="_blank"
               rel="noreferrer"
               style={{ color: "#60A5FA" }}
             >
-              Wine Quality Prediction
+              View Project →
             </a>
-          </h3>
-          <p>Machine Learning model for predicting wine quality.</p>
-        </div>
+          </div>
 
-        <div style={cardStyle}>
-          <h3>Cosmic Watch</h3>
-          <p>
-            Academic project focused on astronomy, celestial bodies and space
-            exploration.
-          </p>
+          <div style={cardStyle}>
+            <h3>🌌 Cosmic Watch</h3>
+
+            <p>
+              Astronomy-based academic project focused on celestial object
+              tracking, planetary information and space exploration concepts.
+            </p>
+
+            <span style={{ color: "#93C5FD" }}>
+              Academic Project
+            </span>
+          </div>
         </div>
       </section>
 
@@ -454,39 +488,69 @@ function App() {
 
         <div
           style={{
-            background: "#111827",
-            padding: "30px",
-            borderRadius: "20px",
-            border: "1px solid #2563EB",
-            maxWidth: "700px",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))",
+            gap: "20px",
           }}
         >
-          <p>📧 akhilesh.k19857@gmail.com</p>
+          <div style={cardStyle}>
+            <h3>📧 Email</h3>
+            <p>akhilesh.k19857@gmail.com</p>
+          </div>
 
-          <p>📱 +91 9973282999</p>
+          <div style={cardStyle}>
+            <h3>📱 Phone</h3>
+            <p>+91 9973282999</p>
+          </div>
 
-          <p>
-            🔗 GitHub:
-            https://github.com/AKHILESH-create
-          </p>
+          <div style={cardStyle}>
+            <h3>💼 LinkedIn</h3>
 
-          <p>
-            💼 LinkedIn:
-            www.linkedin.com/in/akhilesh-kumar-29678a310
-          </p>
+            <a
+              href="https://www.linkedin.com/in/akhilesh-kumar-29678a310"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "#60A5FA" }}
+            >
+              Visit Profile →
+            </a>
+          </div>
+
+          <div style={cardStyle}>
+            <h3>💻 GitHub</h3>
+
+            <a
+              href="https://github.com/AKHILESH-create"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "#60A5FA" }}
+            >
+              Visit Profile →
+            </a>
+          </div>
         </div>
-      </section>
+        </section>
+
 
       <footer
         style={{
           textAlign: "center",
-          padding: "30px",
+          padding: "40px",
           backgroundColor: "#111827",
           marginTop: "50px",
+          borderTop: "1px solid #1E3A8A",
         }}
       >
+        <h3 style={{ color: "#60A5FA" }}>
+          Akhilesh Kumar
+        </h3>
+
         <p>
-          © 2026 Akhilesh Kumar | Built with React & Vite
+          Java Developer • Open Source Contributor • DSA Learner
+        </p>
+
+        <p style={{ marginTop: "15px" }}>
+          © 2026 All Rights Reserved
         </p>
       </footer>
     </div>
