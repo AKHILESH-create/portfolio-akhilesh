@@ -19,7 +19,15 @@ function App() {
           top: 0,
         }}
       >
-        <h2>Akhilesh Kumar</h2>
+        <h2
+          style={{
+            color: "#60A5FA",
+            fontWeight: "bold",
+            letterSpacing: "2px",
+          }}
+        >
+          AKHILESH
+        </h2>
 
         <div>
           <a href="#about" style={linkStyle}>About</a>
@@ -197,7 +205,7 @@ function App() {
               fontSize: "18px",
             }}
           >
-            🎯 Focused on building scalable software solutions and
+             Focused on building scalable software solutions and
             continuously improving problem-solving skills.
           </p>
         </div>
@@ -206,51 +214,77 @@ function App() {
 
       {/* About */}
       <section id="about" style={sectionStyle}>
-        <h2
+        <h2 style={headingStyle}>About Me</h2>
+
+        <div
           style={{
-            fontSize: "40px",
-            color: "#60A5FA",
-            marginBottom: "20px",
+            background: "#111827",
+            padding: "30px",
+            borderRadius: "20px",
+            border: "1px solid #2563EB",
+            lineHeight: "2",
+            maxWidth: "1000px",
+            margin: "auto",
           }}
         >
-          About Me
-        </h2>
+          <p>
+            I am a B.Tech Computer Science & Engineering student at
+            CV Raman Global University, Bhubaneswar.
+          </p>
 
-        <p>
-          B.Tech Computer Science & Engineering student at CV Raman Global
-          University, Bhubaneswar.
-        </p>
+          <p>
+            My primary interests are Java Development, Data Structures &
+            Algorithms, Open Source Contributions and Web Development.
+          </p>
 
-        <p>CGPA: 8.00</p>
+          <p>
+            I enjoy building software projects, solving coding problems
+            and continuously learning new technologies.
+          </p>
 
-        <p>
-          Interested in Java Development, DSA, Open Source, Machine Learning
-          and Full Stack Development.
-        </p>
+          <p>
+            Current CGPA: <strong>8.00</strong>
+          </p>
+        </div>
       </section>
 
       {/* Skills */}
       <section id="skills" style={sectionStyle}>
-        <h2
+        <h2 style={headingStyle}>Skills</h2>
+
+        <div
           style={{
-            fontSize: "40px",
-            color: "#60A5FA",
-            marginBottom: "20px",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))",
+            gap: "20px",
           }}
         >
-          Skills
-        </h2>
+          <div style={cardStyle}>
+            <h3>Languages</h3>
+            <p>C++</p>
+            <p>Java</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>SQL</p>
+          </div>
 
-        <h3>Languages</h3>
-        <p>C++, Java, JavaScript, Python, SQL</p>
+          <div style={cardStyle}>
+            <h3>Frameworks</h3>
+            <p>React</p>
+            <p>Vite</p>
+            <p>Java Swing</p>
+            <p>Scikit-Learn</p>
+          </div>
 
-        <h3>Frameworks & Libraries</h3>
-        <p>
-          React, Vite, Java Swing, Scikit-Learn, Pandas, NumPy, Matplotlib
-        </p>
-
-        <h3>Tools</h3>
-        <p>Git, GitHub, IntelliJ IDEA, VS Code, Postman, Vercel</p>
+          <div style={cardStyle}>
+            <h3>Tools</h3>
+            <p>Git</p>
+            <p>GitHub</p>
+            <p>VS Code</p>
+            <p>IntelliJ IDEA</p>
+            <p>Vercel</p>
+          </div>
+        </div>
       </section>
 
       {/* Projects */}
@@ -383,42 +417,64 @@ function App() {
 
       {/* Achievements */}
       <section style={sectionStyle}>
-        <h2
+        <h2 style={headingStyle}>Achievements</h2>
+
+        <div
           style={{
-            fontSize: "40px",
-            color: "#60A5FA",
-            marginBottom: "20px",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))",
+            gap: "20px",
           }}
         >
-          Achievements
-        </h2>
+          <div style={cardStyle}>
+            <h3>GSSoC 2026</h3>
+            <p>Selected Contributor</p>
+          </div>
 
-        <ul>
-          <li>GSSoC 2026 Contributor</li>
-          <li>Open Source Contributor</li>
-          <li>Built Multiple Java GUI Projects</li>
-          <li>Machine Learning Project Development</li>
-        </ul>
+          <div style={cardStyle}>
+            <h3>Open Source</h3>
+            <p>Active Contributor</p>
+          </div>
+
+          <div style={cardStyle}>
+            <h3>Java Development</h3>
+            <p>Built multiple GUI applications.</p>
+          </div>
+
+          <div style={cardStyle}>
+            <h3>Machine Learning</h3>
+            <p>Developed ML prediction projects.</p>
+          </div>
+        </div>
       </section>
 
       {/* Contact */}
       <section id="contact" style={sectionStyle}>
-        <h2
+        <h2 style={headingStyle}>Contact</h2>
+
+        <div
           style={{
-            fontSize: "40px",
-            color: "#60A5FA",
-            marginBottom: "20px",
+            background: "#111827",
+            padding: "30px",
+            borderRadius: "20px",
+            border: "1px solid #2563EB",
+            maxWidth: "700px",
           }}
         >
-          Contact
-        </h2>
+          <p>📧 akhilesh.k19857@gmail.com</p>
 
-        <p>Email: akhilesh.k19857@gmail.com</p>
-        <p>Phone: +91 9973282999</p>
+          <p>📱 +91 9973282999</p>
 
-        <p>
-          GitHub: AKHILESH-create
-        </p>
+          <p>
+            🔗 GitHub:
+            https://github.com/AKHILESH-create
+          </p>
+
+          <p>
+            💼 LinkedIn:
+            www.linkedin.com/in/akhilesh-kumar-29678a310
+          </p>
+        </div>
       </section>
 
       <footer
@@ -468,5 +524,9 @@ const cardStyle = {
   flex: "1",
 };
 
-
+const headingStyle = {
+  fontSize: "40px",
+  color: "#60A5FA",
+  marginBottom: "20px",
+};
 export default App;
