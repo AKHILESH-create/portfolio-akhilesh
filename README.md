@@ -70,8 +70,8 @@ https://portfolio-akhilesh-t8ab.vercel.app/
 
 ## 📧 Contact
 
-- GitHub: https://github.com/yourusername
-- LinkedIn: https://linkedin.com/in/yourlinkedin
+- GitHub: https://github.com/AKHILESH-create
+- LinkedIn: www.linkedin.com/in/akhilesh-kumar-29678a310
 
 ---
 
