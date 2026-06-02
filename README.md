@@ -39,7 +39,7 @@ A Brick Breaker Game built using Java Swing with collision detection and multipl
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/AKHILESH-create/portfolio-akhilesh
 ```
 
 Go to project folder:
