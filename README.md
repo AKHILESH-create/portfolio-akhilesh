@@ -64,13 +64,7 @@ npm run dev
 
 ## 🌐 Live Demo
 
-Add your deployed portfolio link here after deployment.
-
-Example:
-
-```bash
-https://yourportfolio.vercel.app
-```
+https://portfolio-akhilesh-t8ab.vercel.app/
 
 ---
 
